@@ -22,4 +22,4 @@ def m_thread(arr_of_function):
 
 save_soup = m_thread(arr_of_functions)
 
-print(save_soup)
+print(save_soup) #not returning the "st" from the above function
