@@ -13,7 +13,7 @@ def c_cube(num):
 
 arr =[2,3,4,5]
 arr1 = [10,20,30,40]
-arr_of_functions = [c_square]
+arr_of_functions = [c_square,c_square,c_square]
 
 def m_thread(arr_of_function):
 	threads = []
