@@ -19,3 +19,7 @@ def retriever_soup(my_url):
 	page_soup = soup(page_html, "html.parser")
 	# print(page_soup)
 	return (page_soup)
+
+# print(retriever_soup("http://www.google.com"))
+
+print (retriever_data("http://s4.bitdownload.ir/Game/PC.Game/","table","id","list")) #good Gaming Site
