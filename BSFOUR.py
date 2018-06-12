@@ -17,4 +17,5 @@ def retriever_soup(my_url):
 	page_html = uClient.read()
 	uClient.close()
 	page_soup = soup(page_html, "html.parser")
+	# print(page_soup)
 	return (page_soup)

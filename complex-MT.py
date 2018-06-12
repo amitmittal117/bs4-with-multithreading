@@ -12,14 +12,14 @@ def c_cube(num):
 		print ("Cube: "+str(i*i*i))
 
 arr =[2,3,4,5]
-arr1 = [10,20,30,40]
+# arr1 = [10,20,30,40]
 arr_of_functions = [c_square,c_square,c_square]
 
 def m_thread(arr_of_function):
 	threads = []
 	for i in range(len(arr_of_function)):
 		threads.append(i)
-		threads[i] = threading.Thread(target = arr_of_function[0],args=(arr1,))
+		threads[i] = threading.Thread(target = arr_of_function[0],args=(arr,))
 		threads[i].start()
 
 	for i in range(len(arr_of_function)):
@@ -27,3 +27,6 @@ def m_thread(arr_of_function):
 
 m_thread(arr_of_functions)
 
+# c_square(arr)
+# c_square(arr)
+# c_square(arr)
